@@ -69,11 +69,11 @@ function updateColor() {
 	}
 }
 
-// Local storage save. Keep the counter value after refresh so it feels like a real app instead of a demo.
+// Local storage save. Keep the counter value after refresh so it feels like a real app instead of a demo. DONE
 
-// Custom step size. Let the user count by 1, 5, 10, or any number they choose.
+// Custom step size. Let the user count by 1, 5, 10, or any number they choose. DONE
 
-// Milestone alerts. Show a message or visual effect when the counter hits numbers like 10, 50, or 100.
+// Milestone alerts. Show a message or visual effect when the counter hits numbers like 10, 50, or 100. DONE
 
 // Multiple counters. Add more than one counter on the same screen, like “tasks,” “votes,” or “points.”
 
