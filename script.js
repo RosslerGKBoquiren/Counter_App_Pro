@@ -7,19 +7,19 @@ let sumOption = 1;
 function userSumOption(amount) {
     sumOption = amount;
 
-    // 1. Update the button text to show what's active
+    
     const dropBtn = document.querySelector('.dropbtn');
     dropBtn.textContent = "Mode: +" + amount;
 
-    // 2. Highlight the active choice in the menu
+    
     const options = document.querySelectorAll('.dropdown-content a');
     options.forEach(opt => opt.classList.remove('active-option'));
     
-    // Using a template literal to find the ID based on the amount
+    
     const ids = { 1: "plus-one-option", 5: "plus-five-option", 10: "plus-ten-option" };
     document.getElementById(ids[amount]).classList.add('active-option');
 
-    // 3. Close the dropdown menu immediately
+    
     const menu = document.querySelector('.dropdown-content');
     menu.style.display = 'none';
     setTimeout(() => { menu.style.removeProperty('display'); }, 150);
@@ -32,7 +32,7 @@ function plus() {
 }
 
 function minus() {
-    // Subtract the current sumOption, but don't go below 0
+    
     if (count - sumOption < 0) {
         count = 0;
     } else {
@@ -45,7 +45,7 @@ function minus() {
 function reset() {
     count = 0;
     counted.textContent = count;
-    savedInformation.textContent = ''; // Clear the activity log
+    savedInformation.textContent = '';
     updateColor();
 }
 
